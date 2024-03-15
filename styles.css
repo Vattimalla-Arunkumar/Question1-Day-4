@@ -1,0 +1,119 @@
+/* Styles for login form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b46767;
+}
+
+.container {
+    text-align: center;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.register-link a {
+    color: #000f02;
+    text-decoration: none;
+}
+
+
+body, h1, p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+li {
+    float: right;
+    height: 100%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    color: black;
+    background-color: white;
+}
+  
+
+img {
+    height: inherit;
+}
+
+.header {
+    background-color: black;
+    height: 60px;
+    padding: 5px 20px;
+}
+
+
+h1{
+    padding: 30px;
+    text-align: center;
+ }
+
+ th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h1{
+    padding: 30px;
+    text-align: center;
+ }
+
+ 

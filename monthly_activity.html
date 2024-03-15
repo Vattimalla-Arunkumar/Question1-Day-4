@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Activity Page</title>
+</head>
+<body>
+    <h1>Monthly Activity Page</h1>
+
+    <label for="subjectSelect">Select Subject:</label>
+    <select id="subjectSelect">
+        <option value="maths">Maths</option>
+        <option value="english">English</option>
+        <option value="science">Science</option>
+    </select>
+
+    <div id="monthlyActivities">
+    </div>
+
+    <script>
+        const monthlyActivities = {
+            maths: [
+                "Create project file which contains tables between 12 to 19",
+                "Practice solving algebraic equations",
+            ],
+            english: [
+                "Read 'To Kill a Mockingbird'",
+                "Write an essay on a favorite book",
+            ],
+            science: [
+                "Experiment with chemical reactions",
+                "Study the properties of acids and bases",
+            ],
+        };
+
+        function displayMonthlyActivities() {
+            const subjectSelect = document.getElementById("subjectSelect");
+            const selectedSubject = subjectSelect.value;
+            const monthlyActivitiesContainer = document.getElementById("monthlyActivities");
+
+            monthlyActivitiesContainer.innerHTML = "";
+
+            const activities = monthlyActivities[selectedSubject];
+            if (activities) {
+                activities.forEach(activity => {
+                    const activityElement = document.createElement("p");
+                    activityElement.textContent = activity;
+                    monthlyActivitiesContainer.appendChild(activityElement);
+                });
+            } else {
+                const noActivityElement = document.createElement("p");
+                noActivityElement.textContent = "No activities found for this subject.";
+                monthlyActivitiesContainer.appendChild(noActivityElement);
+            }
+        }
+
+        document.getElementById("subjectSelect").addEventListener("change", displayMonthlyActivities);
+
+        displayMonthlyActivities();
+    </script>
+</body>
+</html>
